@@ -7,7 +7,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Browser {
 
-	static String driverPath = "E:\\QAWorkspace\\SampleTestNG\\lib\\";
+	static String driverPath = "D:\\QAWorkspace\\SampleTestNG\\lib\\";
 	
 	public static WebDriver driver;
 	
