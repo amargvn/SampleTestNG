@@ -11,7 +11,7 @@ public class TestC {
 	WebDriver driver;
 	
 	@BeforeClass
-	public void setUp() {
+	public void setUp() throws Exception{
 		System.out.println("*******************");
 		System.out.println("launching IE browser");
 		driver = Browser.getBrowser("IE");
