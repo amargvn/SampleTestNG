@@ -9,7 +9,7 @@ public class Browser {
 	
 	public static String currentpath() throws Exception
 	{
-		String current = new java.io.File( "." ).getCanonicalPath();
+	    String current = new java.io.File( "." ).getCanonicalPath();
 	    System.out.println("Current dir:"+current);
 	    return current+ "\\lib\\";
 	}
