@@ -11,7 +11,7 @@ public class TestB {
 	WebDriver driver;
 	
 	@BeforeClass
-	public void setUp() {
+	public void setUp() throws Exception{
 		System.out.println("*******************");
 		System.out.println("launching chrome browser");
 		driver = Browser.getBrowser("chrome");
