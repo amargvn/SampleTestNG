@@ -6,12 +6,19 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Browser {
-
-	static String driverPath = "D:\\QAWorkspace\\SampleTestNG\\lib\\";
 	
+	public static String currentpath() throws Exception
+	{
+		String current = new java.io.File( "." ).getCanonicalPath();
+	    System.out.println("Current dir:"+current);
+	    return current+ "\\lib\\";
+	}
+
 	public static WebDriver driver;
 	
-	public static WebDriver getBrowser(String browserType) {
+	public static WebDriver getBrowser(String browserType) throws Exception {
+		String driverPath = currentpath();
+		System.out.println("The current path is :" +driverPath);
 		switch (browserType) {
 		case "firefox":
 			System.setProperty("webdriver.firefox.marionette",driverPath+"geckodriver.exe");
