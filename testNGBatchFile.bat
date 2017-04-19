@@ -1,5 +1,5 @@
 set projectLocation=D:\QAWorkspace\SampleTestNG
 cd %projectLocation%
 set classpath=%projectLocation%\bin;%projectLocation%\lib\*
-java org.testng.TestNG %projectLocation%\testng.xml
+java -cp org.testng.TestNG %projectLocation%\testng.xml
 pause
